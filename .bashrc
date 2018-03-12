@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 
 export EDITOR=vim
 export WORKON_HOME=$HOME/code/virtualenvs
