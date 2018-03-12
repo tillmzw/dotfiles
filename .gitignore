@@ -1,0 +1,12 @@
+﻿/*
+!.gitignore
+!.gitmodules
+!/.bashrc
+!/.vim
+!/.vimrc
+!/.pureline.conf
+!/.fonts/
+!/software
+/software/*
+!/software/i3
+!/software/pureline
