@@ -1,0 +1,9 @@
+[submodule ".vim"]
+	path = .vim
+	url = https://gitlab.tynx.ch/till/vim
+[submodule "software/i3"]
+	path = software/i3
+	url = https://gitlab.tynx.ch/till/i3.git
+[submodule "software/pureline"]
+	path = software/pureline
+	url = https://github.com/chris-marsh/pureline.git
