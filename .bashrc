@@ -17,6 +17,8 @@ export HARVEST_API_TOKEN="1193208.pt.41BcMtOUlYydnpuG_0DIcIRJDPGWy8h8jBRlIiI5ZS5
 export HARVEST_API_ID="523501"
 # to get GPG to use the right tty (?)
 export GPG_TTY=$(tty)
+# force git-secret to use gpg2 instead of the default gpg
+export SECRETS_GPG_COMMAND=gpg2
 
 eval "$(thefuck --alias)"
 
