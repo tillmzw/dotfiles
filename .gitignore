@@ -10,3 +10,6 @@
 /software/*
 !/software/i3
 !/software/pureline
+!/software/pyenv
+!/software/nvm
+!/software/password-store

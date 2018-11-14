@@ -4,3 +4,12 @@
 [submodule "software/pureline"]
 	path = software/pureline
 	url = https://github.com/chris-marsh/pureline.git
+[submodule "software/pyenv"]
+	path = software/pyenv
+	url = https://github.com/pyenv/pyenv.git
+[submodule "software/nvm"]
+	path = software/nvm
+	url = https://github.com/creationix/nvm.git
+[submodule "software/password-store"]
+	path = software/password-store
+	url = https://git.zx2c4.com/password-store

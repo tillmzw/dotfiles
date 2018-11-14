@@ -43,6 +43,10 @@ fi
 export BORG_PASSCOMMAND="pass show borgbackup"
 export BORG_REPO="/mnt/backup/borg"
 
+if [ -f "$HOME/software/password-store/src/completion/pass.bash-completion" ]; then
+	source "$HOME/software/password-store/src/completion/pass.bash-completion"
+fi
+
 if [ $(type -t kubectl) ]; then
 	eval $(kubectl completion bash)
 fi
@@ -60,6 +64,12 @@ fi
 for gemdir in $HOME/.gem/ruby/*; do
 	export PATH="$PATH:$gemdir/bin"
 done
+
+declare -r PYENV_DIR="$HOME/software/pyenv"
+if [ -d "$PYENV_DIR" ]; then
+	export PYENV_ROOT="$PYENV_DIR"
+	[ -s "$PYENV_DIR/bin/pyenv" ] && eval "$($PYENV_DIR/bin/pyenv init -)"
+fi
 
 declare -r NVM_DIR="$HOME/software/nvm"
 if [ -d "$NVM_DIR" ]; then
