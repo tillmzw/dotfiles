@@ -1,6 +1,6 @@
 [submodule ".vim"]
 	path = .vim
-	url = https://gitlab.tynx.ch/till/vim
+	url = git@gitlab.tynx.ch:till/vim
 [submodule "software/pureline"]
 	path = software/pureline
 	url = https://github.com/chris-marsh/pureline.git
