@@ -20,13 +20,14 @@ export GPG_TTY=$(tty)
 # force git-secret to use gpg2 instead of the default gpg
 export SECRETS_GPG_COMMAND=gpg2
 
-eval "$(thefuck --alias)"
+if [ -n "$(type -t thefuck)" ]; then
+	eval "$(thefuck --alias)"
+fi
 
 if [ -n "$(type -t go)" ]; then
 	export GOPATH="$HOME/go"
 	export PATH="$PATH:$GOPATH/bin"
 fi
-
 
 if [ -n "$(type -t virsh)" ]; then
 	export LIBVIRT_DEFAULT_URI="qemu:///system"
