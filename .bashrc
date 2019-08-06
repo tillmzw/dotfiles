@@ -19,6 +19,8 @@ export HARVEST_API_ID="523501"
 export GPG_TTY=$(tty)
 # force git-secret to use gpg2 instead of the default gpg
 export SECRETS_GPG_COMMAND=gpg2
+# Java + Wayland = </3
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 if [ -n "$(type -t thefuck)" ]; then
 	eval "$(thefuck --alias)"
