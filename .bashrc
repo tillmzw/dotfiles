@@ -79,3 +79,6 @@ if [ -d "$NVM_DIR" ]; then
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 fi
 
+# https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/
+randpw(){ < /dev/urandom tr -dc _a-z-0-9 | head -c${1:-16};echo;}
+
