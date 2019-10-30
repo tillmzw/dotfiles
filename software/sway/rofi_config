@@ -1,0 +1,4 @@
+rofi.modi:			combi
+rofi.combi-modi:	drun,run,ssh
+rofi.theme:			solarized
+rofi.terminal:		/usr/bin/xfce4-terminal

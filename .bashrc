@@ -19,6 +19,8 @@ export HARVEST_API_ID="523501"
 export GPG_TTY=$(tty)
 # force git-secret to use gpg2 instead of the default gpg
 export SECRETS_GPG_COMMAND=gpg2
+# Java + Wayland = </3
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 if [ -n "$(type -t thefuck)" ]; then
 	eval "$(thefuck --alias)"
@@ -76,4 +78,7 @@ declare -r NVM_DIR="$HOME/software/nvm"
 if [ -d "$NVM_DIR" ]; then
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 fi
+
+# https://www.howtogeek.com/howto/30184/10-ways-to-generate-a-random-password-from-the-command-line/
+randpw(){ < /dev/urandom tr -dc _a-z-0-9 | head -c${1:-16};echo;}
 
