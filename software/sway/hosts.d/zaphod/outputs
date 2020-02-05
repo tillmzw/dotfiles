@@ -1,1 +1,20 @@
-../common/outputs
+# Example configuration:
+#
+#   output HDMI-A-1 resolution 1920x1080 position 1920,0
+#
+# You can get the names of your outputs by running: swaymsg -t get_outputs
+
+output * bg /home/till/software/sway/wall.jpg fill
+output * scale 1
+
+output "Unknown 0x0597 0x00000000" mode 1920x1200 position -1920,600
+
+workspace 1 output eDP-1
+workspace 2 output eDP-1
+workspace 3 output eDP-1
+workspace 4 output DP-1
+workspace 5 output DP-1
+workspace 6 output DP-1
+workspace 7 output DP-1
+workspace 8 output DP-1
+workspace 9 output DP-1
