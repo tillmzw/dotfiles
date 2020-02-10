@@ -2,3 +2,5 @@ gaps inner 8
 smart_gaps off
 smart_borders no_gaps
 
+# remove title bar (defaults to "normal", which includes a title bar).
+default_border pixel 4
