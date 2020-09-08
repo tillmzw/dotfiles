@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Till Meyer zu Westram
-	email = till.meyerzuwestram@89grad.ch
+	email = till@meyerzuwestram.net
 
 [alias]
 	lg = !"git lg-specific --all"
