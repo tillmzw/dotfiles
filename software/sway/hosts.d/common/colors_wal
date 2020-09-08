@@ -1,0 +1,22 @@
+include ~/.cache/wal/colors-sway
+
+set $base00 $color0
+set $base01 $color1
+set $base02 $color2
+set $base03 $color3
+set $base04 $color4
+set $base05 $color5
+set $base06 $color6
+set $base07 $color7
+set $base08 $color8
+set $base09 $color9
+set $base0A $color10
+set $base0B $color11
+set $base0C $color12
+set $base0D $color13
+set $base0E $color14
+set $base0F $color15
+
+
+output * background $wallpaper fill
+client.focused $color0 $background $foreground $color7 $background

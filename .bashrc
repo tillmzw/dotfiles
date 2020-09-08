@@ -94,6 +94,10 @@ function start_agent {
 	#/usr/bin/ssh-add;
 }
 
+if [ -n "$(type -t wal)" ]; then
+	(cat ~/.cache/wal/sequences &)
+fi
+
 # Source SSH settings, if applicable
 
 if [ -f "${SSH_ENV}" ]; then
