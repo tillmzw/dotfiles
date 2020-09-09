@@ -12,3 +12,8 @@
 input * xkb_layout "ch"
 input "1452:597:Keychron_K4" xkb_layout "us"
 input "1452:591:USB_Keychron_K4_USB_DEVICE" xkb_layout "us"
+
+input "2:7:SynPS/2_Synaptics_TouchPad" {
+	tap enabled
+}
+
