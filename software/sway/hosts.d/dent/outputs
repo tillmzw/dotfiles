@@ -10,12 +10,15 @@
 #output "Hewlett Packard LA2405 CN40460RQ3" mode 1920x1200 position 1920,0
 #output "Unknown 0x0597 0x00000000" mode 1920x1080 position 0,600
 #
-#workspace 1 output eDP-1
-#workspace 2 output eDP-1
-#workspace 3 output eDP-1
-#workspace 4 output DP-1
-#workspace 5 output DP-1
-#workspace 6 output DP-1
-#workspace 7 output DP-1
-#workspace 8 output DP-1
-#workspace 9 output DP-1
+workspace 1 output $intmon
+workspace 2 output $intmon
+workspace 3 output $intmon
+workspace 4 output $extmon
+workspace 5 output $extmon
+workspace 6 output $extmon
+workspace 7 output $extmon
+workspace 8 output $extmon
+workspace 9 output $extmon
+
+output $intmon position 0 0
+output $extmon position 1920 0 mode 3840x2160@30Hz

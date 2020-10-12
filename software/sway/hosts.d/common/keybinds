@@ -155,3 +155,4 @@ bindsym XF86MonBrightnessUp exec light -s sysfs/backlight/auto -A 5
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86Display exec swaymsg output $extmon toggle

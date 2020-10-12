@@ -16,4 +16,6 @@ set $term gnome-terminal
 # note that this below requires additional configuration for rofi
 set $menu rofi -show combi
 
+set $intmon eDP-1
+set $extmon DP-3
 
