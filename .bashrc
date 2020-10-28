@@ -22,10 +22,6 @@ export SECRETS_GPG_COMMAND=gpg2
 # Java + Wayland = </3
 export _JAVA_AWT_WM_NONREPARENTING=1
 
-if [ -n "$(type -t thefuck)" ]; then
-	eval "$(thefuck --alias)"
-fi
-
 if [ -n "$(type -t go)" ]; then
 	export GOPATH="$HOME/go"
 	export PATH="$PATH:$GOPATH/bin"
@@ -43,15 +39,8 @@ elif [ -f "$HOME/.local/bin/virtualenvwrapper.sh" ] ; then
 	source "$HOME/.local/bin/virtualenvwrapper.sh"
 fi
 
-export BORG_PASSCOMMAND="pass show borgbackup"
-export BORG_REPO="/mnt/backup/borg"
-
 if [ -f "$HOME/software/password-store/src/completion/pass.bash-completion" ]; then
 	source "$HOME/software/password-store/src/completion/pass.bash-completion"
-fi
-
-if [ $(type -t kubectl) ]; then
-	eval $(kubectl completion bash)
 fi
 
 if [ -d "$HOME/.local/bin" ]; then
@@ -59,14 +48,9 @@ if [ -d "$HOME/.local/bin" ]; then
 	export PATH="$PATH":"$HOME/.local/bin"
 fi
 
-if [ -d "$HOME/bin" ]; then
-	# haskell
-	export PATH="$PATH":"$HOME/bin"
-fi
-
-for gemdir in $HOME/.gem/ruby/*; do
-	export PATH="$PATH:$gemdir/bin"
-done
+#for gemdir in $HOME/.gem/ruby/*; do
+#	export PATH="$PATH:$gemdir/bin"
+#done
 
 declare -r PYENV_DIR="$HOME/software/pyenv"
 if [ -d "$PYENV_DIR" ]; then
@@ -93,11 +77,6 @@ function start_agent {
 	. "${SSH_ENV}" > /dev/null
 	#/usr/bin/ssh-add;
 }
-
-if [ -n "$(type -t wal)" ]; then
-	(cat ~/.cache/wal/sequences &)
-fi
-
 # Source SSH settings, if applicable
 
 if [ -f "${SSH_ENV}" ]; then
@@ -109,3 +88,9 @@ if [ -f "${SSH_ENV}" ]; then
 else
 	start_agent;
 fi
+
+if [ -n "$(type -t wal)" ]; then
+	(cat ~/.cache/wal/sequences &)
+fi
+
+
