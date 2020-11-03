@@ -21,4 +21,5 @@ workspace 8 output $extmon
 workspace 9 output $extmon
 
 output $intmon position 0 0
-output $extmon position 1920 0 mode 3840x2160@30Hz
+#output $extmon position 1920 0 mode 3840x2160@30Hz
+output $extmon position 1920 0 mode 2560x1440@60Hz
