@@ -8,6 +8,15 @@
 !/.flake8
 !/.pureline.conf
 !/.fonts/
+
+!/.config
+/.config/*
+!/.config/git
+!/.config/sway
+!/.config/swaylock
+!/.config/i3status
+!/.config/rofi
+
 !/software
 /software/*
 !/software/i3
