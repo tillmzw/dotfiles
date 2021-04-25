@@ -89,7 +89,11 @@ else
 	start_agent;
 fi
 
-if [ -n "$(type -t wal)" ]; then
+if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+	# SSH session, do not load wal
+	# : is a null command
+	:
+elif [ -n "$(type -t wal)" ]; then
 	(cat ~/.cache/wal/sequences &)
 fi
 
