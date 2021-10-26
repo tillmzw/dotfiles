@@ -8,12 +8,6 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term gnome-terminal
+set $term xfce4-terminal
 # Your preferred application launcher
-# Note: it's recommended that you pass the final command to sway
-#set $menu dmenu_path | dmenu | xargs swaymsg exec --
-#set $menu j4-dmenu-desktop | xargs swaymsg exec --
-# note that this below requires additional configuration for rofi
-set $menu rofi -show combi
-
-
+set $menu wofi --show drun 
