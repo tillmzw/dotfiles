@@ -1,1 +1,2 @@
-/home/till/software/sway/swaylock_config
+image=/home/till/software/sway/lock.jpg
+ring-color=000000
