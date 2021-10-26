@@ -1,0 +1,21 @@
+set $wallpaper ~/software/sway/wall.jpg
+
+set $background #073642
+set $foreground #fdf6e3
+
+set $color0 #073642
+set $color1 #dc322f
+set $color2 #859900
+set $color3 #b58900
+set $color4 #268bd2
+set $color5 #d33682
+set $color6 #2aa198
+set $color7 #eee8d5
+set $color8 #6c7c80
+set $color9 #dc322f
+set $color10 #859900
+set $color11 #b58900
+set $color12 #268bd2
+set $color13 #d33682
+set $color14 #2aa198
+set $color15 #eee8d5

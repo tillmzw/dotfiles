@@ -15,7 +15,12 @@
 !/.config/sway
 !/.config/swaylock
 !/.config/i3status
-!/.config/rofi
+!/.config/wofi
+!/.config/kitty
+
+!/.cache
+/.cache/*
+!/.cache/wal
 
 !/software
 /software/*
