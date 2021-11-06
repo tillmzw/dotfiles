@@ -1,0 +1,76 @@
+{
+    "layer": "top",
+    "position": "top",
+	"modules-left": ["sway/workspaces"],
+	"modules-center": ["clock"],
+    "modules-right": ["network", "battery", "tray", "backlight", "idle_inhibitor", "custom/quit"],
+	"sway/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"format": "{name}: {icon}",
+		"format-icons": {
+			"urgent": "",
+			"focused": "",
+			"default": ""
+		}
+	},
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "{:%a %b %d}",
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "bat":"BAT0",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-discharging": "{capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": " {essid}",
+        "format-ethernet": " {ifname}",
+        "format-disconnected": "",
+        "tooltip-format-wifi": "{signalStrength}%",
+        "max-length": 20
+    },
+	"idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+	"backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "scroll-step": 1,
+        "on-click": "pavucontrol"
+    },
+    "custom/quit": {
+        "format": "",
+        "on-click": "swaynag -f 'Terminus (TTF)'  -t warning -m 'Do you really want to exit sway?' -b 'Yes, exit sway' 'swaymsg exit'"
+    }
+}

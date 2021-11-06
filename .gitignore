@@ -14,7 +14,7 @@
 !/.config/git
 !/.config/sway
 !/.config/swaylock
-!/.config/i3status
+!/.config/waybar
 !/.config/wofi
 !/.config/kitty
 
