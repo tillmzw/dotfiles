@@ -17,6 +17,4 @@ set $base0D $color13
 set $base0E $color14
 set $base0F $color15
 
-
-output * background $wallpaper fill
 client.focused $color0 $background $foreground $color7 $background
