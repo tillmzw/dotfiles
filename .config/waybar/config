@@ -7,11 +7,16 @@
 	"sway/workspaces": {
 		"disable-scroll": true,
 		"all-outputs": true,
-		"format": "{name}: {icon}",
+		"format": "{icon}",
 		"format-icons": {
 			"urgent": "",
 			"focused": "",
-			"default": ""
+			"default": "",
+			"1": "📧",
+			"2": "🌐",
+			"3": "",
+			"4": "",
+			"9": ""
 		}
 	},
     "clock": {
