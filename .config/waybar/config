@@ -9,13 +9,14 @@
 		"all-outputs": true,
 		"format": "{icon}",
 		"format-icons": {
+			// https://fontawesome.com/icons
 			"urgent": "",
 			"focused": "",
 			"default": "",
-			"1": "📧",
-			"2": "🌐",
+			"1": "",
+			"2": "",
 			"3": "",
-			"4": "",
+			"8": "",
 			"9": ""
 		}
 	},
