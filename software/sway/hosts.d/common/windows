@@ -3,6 +3,7 @@ for_window [app_id="ulauncher"] floating enable, border none
 assign [class="Thunderbird"] workspace 1
 assign [app_id="firefox"] workspace 2
 assign [class="Steam"] workspace 8
+assign [app_id="minigalaxy"] workspace 8
 assign [class="Signal"] workspace 9
 assign [class="TelegramDesktop"] workspace 9
 
