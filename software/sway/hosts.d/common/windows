@@ -1,2 +1,11 @@
 for_window [app_id="ulauncher"] floating enable, border none
 
+assign [class="Thunderbird"] workspace 1
+assign [app_id="firefox"] workspace 2
+assign [class="Signal"] workspace 9
+assign [class="TelegramDesktop"] workspace 9
+
+exec flatpak run org.mozilla.Thunderbird
+exec firefox
+exec flatpak run org.signal.Signal
+exec flatpak run org.telegram.desktop
