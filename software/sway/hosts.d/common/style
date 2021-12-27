@@ -4,3 +4,5 @@ smart_borders no_gaps
 
 # remove title bar (defaults to "normal", which includes a title bar).
 default_border pixel 4
+
+exec wlsunset -l 47 -L 7
