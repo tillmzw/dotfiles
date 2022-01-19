@@ -6,6 +6,7 @@ assign [class="Steam"] workspace 8
 assign [app_id="minigalaxy"] workspace 8
 assign [class="Signal"] workspace 9
 assign [class="TelegramDesktop"] workspace 9
+assign [class="Chiaki"] workspace 8
 
 exec flatpak run org.mozilla.Thunderbird
 exec firefox
