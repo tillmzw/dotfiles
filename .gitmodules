@@ -1,6 +1,6 @@
 [submodule ".vim"]
 	path = .vim
-	url = gitea@git.512.ch:till/vim.git 
+	url = https://github.com/tillmzw/vim.git
 [submodule "software/pureline"]
 	path = software/pureline
 	url = https://github.com/chris-marsh/pureline.git
