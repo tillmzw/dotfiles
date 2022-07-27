@@ -97,4 +97,7 @@ elif [ -n "$(type -t wal)" ]; then
 	(cat ~/.cache/wal/sequences &)
 fi
 
+if [ -d /home/linuxbrew/.linuxbrew/bin ]; then
+	export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+fi 
 
