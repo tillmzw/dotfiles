@@ -101,3 +101,7 @@ if [ -d /home/linuxbrew/.linuxbrew/bin ]; then
 	export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 fi 
 
+if [ -d $HOME/.krew ]; then
+	export PATH="$HOME/.krew/bin:$PATH"
+fi
+
