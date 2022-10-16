@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ -n "$(type -t zsh)" ]; then
+	echo "zsh available. Please consider switching."
+fi
+
 if [ "$TERM" != "linux" ]; then
 	source ~/software/pureline/pureline ~/.pureline.conf
 fi

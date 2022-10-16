@@ -8,6 +8,7 @@
 !/.flake8
 !/.pureline.conf
 !/.fonts/
+!/.zshrc
 
 !/.config
 /.config/*
@@ -30,3 +31,4 @@
 !/software/nvm
 !/software/password-store
 !/software/sway
+!/.oh-my-zsh
