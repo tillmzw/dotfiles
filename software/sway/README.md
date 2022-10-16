@@ -1,7 +1,9 @@
 # Fully-Configured swaywm
 
-## Fedora 35
+## Fedora 36
 
-`ImageMagick sway swaylock swayidle waybar wofi kitty light wlsunset`
+- `ImageMagick sway swaylock swayidle waybar wofi kitty light wlsunset playerctl`
+- recommends: `vim zsh btop httpie`
+
 
 
