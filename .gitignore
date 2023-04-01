@@ -17,7 +17,7 @@
 !/.config/swaylock
 !/.config/waybar
 !/.config/wofi
-!/.config/kitty
+!/.config/foot
 
 !/.cache
 /.cache/*
