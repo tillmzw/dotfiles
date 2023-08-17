@@ -102,3 +102,5 @@ if [ -d $HOME/.krew ]; then
 	export PATH="$HOME/.krew/bin:$PATH"
 fi
 
+alias protontricks="flatpak run com.github.Matoking.protontricks"
+alias protontricks-launch="flatpak run --command=protontricks-launch com.github.Matoking.protontricks"
