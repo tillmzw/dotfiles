@@ -11,11 +11,15 @@
 		"format-icons": {
 			// https://fontawesome.com/icons
 			"urgent": "",
-			"focused": "",
-			"default": "",
+			//"focused": "",
+			//"default": "",
 			"1": "",
 			"2": "",
 			"3": "",
+			"4": "4",
+			"5": "5",
+			"6": "6",
+			"7": "7",
 			"8": "",
 			"9": ""
 		}
