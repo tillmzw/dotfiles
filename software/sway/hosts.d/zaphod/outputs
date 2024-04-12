@@ -14,6 +14,17 @@ output * scale 1
 output eDP-1 pos 0 1080 
 output "LG Electronics LG HDR 4K 0x0000E74D" pos 1920 0
 
+output "Sony SONY TV 0x00000101" {
+	# the wooden-framed desk screen in KuL
+	background #000000 solid_color
+	transform 90
+}
+
+output "Samsung Electric Company LS24A40xU H4TT302116" {
+	# the more modern 21" screen in KuL
+	background #000000 solid_color
+	transform 270
+}
 
 
 #
@@ -29,3 +40,4 @@ output "LG Electronics LG HDR 4K 0x0000E74D" pos 1920 0
 #workspace 7 output DP-1
 #workspace 8 output DP-1
 #workspace 9 output DP-1
+workspace 10 output DP-1
