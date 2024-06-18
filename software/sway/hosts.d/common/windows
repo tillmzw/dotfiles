@@ -5,10 +5,9 @@ assign [app_id="firefox"] workspace 2
 assign [class="Steam"] workspace 8
 assign [app_id="minigalaxy"] workspace 8
 assign [class="Signal"] workspace 9
-assign [app_id="org.telegram.desktop"] workspace 9
+#assign [app_id="org.telegram.desktop"] workspace 9
 assign [class="Chiaki"] workspace 8
 
 exec flatpak run org.mozilla.Thunderbird
 exec firefox
 exec flatpak run org.signal.Signal
-exec flatpak run org.telegram.desktop
